@@ -2,7 +2,13 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "import"
   ],
   "rules": {
     "prettier/prettier": [
@@ -11,18 +17,47 @@
         "endOfLine": "auto",
         "tabWidth": 2,
         "useTabs": false,
-        "semi": true, // Adiciona ponto e vírgula no final das declarações
-        "singleQuote": true, // Usa aspas simples ao invés de aspas duplas
-        "printWidth": 80, // Define a largura máxima da linha
-        "trailingComma": "es5", // Adiciona vírgula no final de objetos e arrays (es5)
-        "bracketSpacing": true, // Adiciona espaço entre chaves em objetos
-        "jsxBracketSameLine": false, // Coloca o '>' do JSX na linha seguinte
-        "arrowParens": "always" // Sempre coloca parênteses em volta de argumentos de arrow functions
+        "semi": true,
+        "singleQuote": true,
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "always"
       }
     ],
     "indent": [
       "error",
       2
-    ] // ESLint usa 2 espaços para indentação
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "builtin",
+            "external",
+            "internal"
+          ]
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
