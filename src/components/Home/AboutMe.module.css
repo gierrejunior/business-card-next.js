@@ -1,0 +1,104 @@
+/* Estilo para a grade de tecnologias */
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, max-content)); /* Limita o crescimento dos cards */
+  gap: 15px; /* Espaçamento entre os cards */
+  justify-content: left; /* Centraliza os cards na tela */
+  margin-top: 20px;
+}
+
+/* Estilo para cada card de tecnologia */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+/* Controle explícito do tamanho dos ícones */
+.card svg {
+  margin-right: 5px;
+  font-size: 25px !important;
+  width: 25px;
+  height: 25px;
+}
+
+/* Estilos de cada linguagem, tecnologia, e habilidade */
+
+/* Linguagens */
+.python {
+  background-color: #3776ab; /* Azul - Python */
+  color: white;
+}
+
+.js {
+  background-color: #f0db4f; /* Amarelo - JavaScript */
+  color: #323330;
+}
+
+.ts {
+  background-color: #007acc; /* Azul - TypeScript */
+  color: white;
+}
+
+.sql {
+  background-color: #f29111; /* Laranja - SQL */
+  color: white;
+}
+
+/* Tecnologias */
+.django {
+  background-color: #092e20; /* Verde Escuro - Django */
+  color: white;
+}
+
+.nest {
+  background-color: #e0234e; /* Vermelho - NestJS */
+  color: white;
+}
+
+.node {
+  background-color: #68a063; /* Verde - Node.js */
+  color: white;
+}
+
+.git {
+  background-color: #f34f29; /* Laranja - Git */
+  color: white;
+}
+
+.github {
+  background-color: #24292f; /* Preto - GitHub */
+  color: white;
+}
+
+/* Habilidades Técnicas */
+.api {
+  background-color: #4caf50; /* Verde - API */
+  color: white;
+}
+
+.unitTesting {
+  background-color: #9c27b0; /* Roxo - Testes Unitários */
+  color: white;
+}
+
+.integrationTesting {
+  background-color: #ff9800; /* Laranja - Testes de Integração */
+  color: white;
+}
