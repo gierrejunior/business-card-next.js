@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <div>
+    <div className="py-12 px-6 md:px-32 space-y-10 md:space-y-28">
       <AboutMe />
     </div>
   );
