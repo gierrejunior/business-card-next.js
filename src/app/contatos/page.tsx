@@ -1,3 +1,4 @@
+import { CopyButton } from '@/components/commons/copy-button';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ const Contatos = () => {
             >
               gierremartins@gmail.com
             </a>
+            <CopyButton textToCopy="gierremartins@gmail.com" />
           </div>
         </li>
         <li className="md:text-xl">
@@ -29,6 +31,7 @@ const Contatos = () => {
             >
               https://www.linkedin.com/in/gierrejunior/
             </a>
+            <CopyButton textToCopy="https://www.linkedin.com/in/gierrejunior/" />
           </div>
         </li>
         <li className="md:text-xl">
@@ -40,6 +43,7 @@ const Contatos = () => {
             >
               https://github.com/gierrejunior
             </a>
+            <CopyButton textToCopy="https://github.com/gierrejunior" />
           </div>
         </li>
       </ul>
