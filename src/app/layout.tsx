@@ -1,4 +1,4 @@
-import Header from '@/components/commons/header';
+import Header from '@/components/commons/header/index';
 import type { Metadata } from 'next';
 import { JetBrains_Mono } from 'next/font/google';
 import './globals.css';

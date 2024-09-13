@@ -1,4 +1,3 @@
-import Node from 'postcss/lib/node';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -26,7 +25,6 @@ const config: Config = {
         django: '#092E20',
         github: '#181717',
         postgresql: '#336791',
-        github: '#181717',
       },
       width: {
         120: '3grem',
